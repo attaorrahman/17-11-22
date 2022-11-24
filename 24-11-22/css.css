@@ -1,4 +1,7 @@
-/* CSS Reset */
+ /* CSS Reset */
+body{
+    overflow-x: hidden;
+}
 *{
     margin: 0;
     padding: 0;
@@ -7,19 +10,38 @@
 /* Sky Styling */
 .sky {
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
 }
+.bird{
+    /* background-image: url(images/birds.jpg); */
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    margin-top: 10%;
+
+}
+.bird img{
+    display: inline-block;
+}
 
 /* Tree Styling and positioning */
 .tree {
-    height: 100vh;
+    height: 80.4vh;
     background-image: url(images/trees.png);
-    background-repeat:no-repeat;
+    background-repeat:repeat-x;
     background-size: cover;
+    animation: treeanimation 6s linear infinite;
+    /* width: 1000vw; */
+}
+.tree{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-end;
+    
 }
 
 /* Track Styling and positioning */
@@ -30,7 +52,7 @@
     bottom: 0px;
     width: 1000vw;
     height: 20vh;
-    animation: trackanimation 1s linear infinite;
+    animation: trackanimation 8s linear infinite;
 }
 
 /* Car Styling and positioning */
@@ -80,5 +102,10 @@
 @keyframes trackanimation {
     100% {
         transform: translate(-500vw);
+    }
+}
+@keyframes treeanimation {
+    100% {
+        transform: rotate(-500vw);
     }
 }
