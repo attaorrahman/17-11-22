@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+#bulb{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#bulb img{
+    width: 300px;
+    height: 400px;
+    
+}
+button{
+    color: bisque;
+    background-color: red;
+}

@@ -11,5 +11,5 @@ let students = [
 ]
 let ar=students.filter(student=>student.age<=18)
 for(a=0; a<ar.length;a++){
-    document.write(ar[a].name+ ar[a].age+'<br>')
+    document.write(ar[a].name+'  '+ ar[a].age+'<br>')
 }
